@@ -1,0 +1,59 @@
+{
+    "Acne and Rosacea": { 
+        "description":"Acne, also known as acne vulgaris, is a long-term skin disease that occurs when hair follicles are clogged with dead skin cells and oil from the skin.[10] It is characterized by blackheads or whiteheads, pimples, oily skin, and possible scarring.",
+        "symptoms": "Scars and Pigmentation",
+        "causes": "Risk factors for the development of acne, other than genetics, have not been conclusively identified. Possible secondary contributors include hormones, infections, diet and stress",
+        "treatement-1": "https://www.medicinenet.com/acne/article.htm#what_is_acne",
+        "treatement-2": "https://www.aad.org/public/diseases/acne-and-rosacea/rosacea/how-to-treat-the-redness",
+        "symptom_list": "redness, pimples, pustules, swelling, oily skin, visible blood vessels, skin thickening, dryness, itching"
+    },
+    "Actinic Keratosis Basal Cell Carcinoma": {
+        "description": "Actinic keratosis (AK) is a pre-cancerous[2] area of thick, scaly, or crusty skin.[3][4] These growths are more common in fair-skinned people and those who are frequently in the sun.[5] They are believed to form when skin gets damaged by ultraviolet (UV) radiation from the sun or indoor tanning beds, usually over the course of decades.",
+        "symptoms": "Actinic keratoses (AKs) most commonly present as a white, scaly plaque of variable thickness with surrounding redness",
+        "causes": "The most important cause of AK formation is solar radiation, through a variety of mechanisms. ",
+        "treatement-1": "https://www.skincancer.org/skin-cancer-information/actinic-keratosis/actinic-keratosis-treatment-options",
+        "treatement-2": "https://www.skincancer.org/skin-cancer-information/basal-cell-carcinoma/bcc-treatment-options",
+        "symptom_list":"rough scaly patch, itching, burning sensation, red spots, open sores, bleeding, crusting, non-healing ulcer, pearly or waxy bump, scar-like area"
+    },
+    "Psoriasis Lichen Planus": {
+        "description": "Psoriasis is a long-lasting autoimmune disease characterized by patches of abnormal skin.[6] These skin patches are typically red, dry, itchy, and scaly.[3] On people with darker skin the patches may be purple in colour." ,
+        "symptoms": "Plaque psoriasis typically appears as raised areas of inflamed skin covered with silvery-white scaly skin. These areas are called plaques and are most commonly found on the elbows, knees, scalp, and back.",
+        "causes": "The cause of psoriasis is not fully understood, but a number of theories exist.",
+        "treatement-1": "https://www.medicinenet.com/psoriasis/article.htm",
+        "treatement-2": "https://www.mayoclinic.org/diseases-conditions/psoriasis/diagnosis-treatment/drc-20355845",
+        "symptom_list": "red patches of skin, silvery scales, itching, burning, soreness, thickened nails, joint pain, dry cracked skin, swollen stiff joints"
+    },
+    "Tinea Ringworm Candidiasis": {
+        "description": "Candidiasis is a fungal infection due to any type of Candida (a type of yeast).[2] When it affects the mouth, it is commonly called thrush.[2] Signs and symptoms include white patches on the tongue or other areas of the mouth and throat.[3] Other symptoms may include soreness and problems swallowing" ,
+        "symptoms": "Signs and symptoms of candidiasis vary depending on the area affected.[17] Most candidal infections result in minimal complications such as redness, itching, and discomfort, though complications may be severe or even fatal if left untreated in certain populations.",
+        "causes": "Candida yeasts are generally present in healthy humans, frequently part of the human body's normal oral and intestinal flora, and particularly on the skin; however, their growth is normally limited by the human immune system and by competition of other microorganisms, such as bacteria occupying the same locations in the human body.",
+        "treatement-1": "https://www.cdc.gov/fungal/diseases/candidiasis/thrush/index.html",
+        "treatement-2": "https://www.drugs.com/health-guide/candidiasis.html",
+        "symptom_list": "ring-shaped rash, itching, redness, scaling, cracking, blisters, peeling, thickened nails, white patches in the mouth, burning sensation"
+    },
+    "Nail Fungus": {
+        "description": "A nail disease or onychosis is a disease or deformity of the nail. Although the nail is a structure produced by the skin and is a skin appendage, nail diseases have a distinct classification as they have their own signs and symptoms which may relate to other medical conditions. Some nail conditions that show signs of infection or inflammation may require medical assistance." ,
+        "symptoms": "You may have nail fungus if one or more of your nails are: Thickened, Whitish to yellow-brown discoloration, Brittle, crumbly or ragged, Distorted in shape, A dark color, caused by debris building up under your nail, Smelling slightly foul",
+        "causes": "Fungal nail infections are caused by various fungal organisms (fungi). The most common cause is a type of fungus called dermatophyte. Yeast and molds also can cause nail infections.",
+        "treatement-1": "https://www.mayoclinic.org/diseases-conditions/nail-fungus/symptoms-causes/syc-20353294",
+        "treatement-2": "https://www.healthline.com/health/fungal-nail-infection#prevention",
+        "symptom_list": "thickened nails, discoloration, crumbling nails, distorted nail shape, foul odor, separation of the nail from the nail bed, pain in fingers or toes, brittle nails, white or yellow spots"
+    },
+    "Seborrheic Keratoses": {
+        "description": "Seborrheic keratoses are noncancerous (benign) skin growths that appear as brown, black, or light tan patches on the face, chest, shoulders, or back. These growths typically have a waxy, scaly, or slightly elevated appearance. They are common in older adults and are harmless, though they can sometimes be mistaken for skin cancer.",
+        "symptoms": "Symptoms of seborrheic keratoses include: round or oval, flat or slightly elevated lesions; a waxy or scaly texture; colors ranging from light tan to black; growths that look pasted on the skin; itching or irritation; multiple growths appearing in a cluster.",
+        "causes": "The exact cause of seborrheic keratoses is unknown, but they are thought to be related to aging and genetic factors. Sun exposure may also contribute to their development, although these growths occur in areas not typically exposed to the sun.",
+        "treatement-1": "https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878",
+        "treatement-2": "https://www.healthline.com/health/seborrheic-keratosis",
+        "symptom_list": "waxy growths, scaly patches, brown or black lesions, slightly elevated growths, itching or irritation, multiple lesions, tan to dark pigmentation, round or oval shapes, benign skin growths"
+    },
+    "Warts Molluscum": {
+        "description": "Warts and molluscum contagiosum are both common skin infections caused by viruses. Warts are caused by the human papillomavirus (HPV) and appear as small, rough skin growths. Molluscum contagiosum is caused by a poxvirus and results in small, firm, raised spots or bumps with a central dimple. Both conditions are usually harmless and self-limited but can spread through skin-to-skin contact or contaminated objects.",
+        "symptoms": "Warts may appear as rough, flesh-colored bumps, often on the hands, feet, or other areas subject to friction. Molluscum presents as small, flesh-colored or pink, dome-shaped bumps with a dimpled center. Molluscum bumps may become red or inflamed, especially if scratched or irritated.",
+        "causes": "Warts are caused by the human papillomavirus (HPV), while molluscum contagiosum is caused by a poxvirus. Both conditions spread through direct skin contact, contaminated surfaces, or sharing personal items like towels or razors. Warts are more common in people with weakened immune systems or those with minor skin injuries.",
+        "treatement-1": "https://www.mayoclinic.org/diseases-conditions/warts/symptoms-causes/syc-20371029",
+        "treatement-2": "https://www.healthline.com/health/molluscum-contagiosum",
+        "symptom_list": "rough skin growths, flesh-colored bumps, dome-shaped bumps with a central dimple, red or inflamed spots, painless bumps, itching, skin-colored warts, flat or raised lesions, irritation"
+    }
+    
+}
