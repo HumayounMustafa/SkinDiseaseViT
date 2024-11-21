@@ -111,7 +111,8 @@ if uploaded_file is not None and user_symptoms:
     
     # Predict the disease
     disease_name, description, symptoms, causes, treatment, similarity = predict(image, user_symptoms)
-    
+    if disease_name=='Acne and Rosacea':
+        disease_name='Acne/Rosacea'
     if disease_name:
         # Display the results
         st.subheader("Prediction Results")
