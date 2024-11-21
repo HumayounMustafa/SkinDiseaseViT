@@ -1,86 +1,147 @@
 # Skin Disease Classification with Symptom Matching
+## Overview
 
-This repository contains a web-based application that predicts skin diseases based on uploaded images and user-provided symptoms. The application uses a combination of Vision Transformer (ViT) for image classification and Sentence Transformer for symptom matching to provide accurate predictions and detailed information about the identified diseases.
+This repository contains a Streamlit application that predicts skin diseases based on uploaded images and user-provided symptoms. The application combines image classification using a fine-tuned Vision Transformer (ViT) model and symptom matching using a Sentence Transformer to enhance prediction accuracy.
+## Table of Contents
 
-## Features
-- **Image Classification**: Uses Vision Transformer (ViT) to classify skin diseases from uploaded images.
-- **Symptom Matching**: Matches user-provided symptoms with predefined symptom lists using Sentence Transformers for improved prediction accuracy.
-- **Disease Information**: Provides descriptions, symptoms, causes, and treatment options for the predicted disease.
-- **Streamlit Interface**: Easy-to-use web interface for uploading images and entering symptoms.
+    Features
+    Supported Skin Conditions
+    Model Weights
+    Installation
+    Usage
+    How It Works
+    Data
+    Files in the Repository
+    Contributing
+    License
+    Acknowledgments
+    Contact
 
-## Supported Diseases
-- Acne and Rosacea
-- Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions
-- Psoriasis and related diseases
-- Tinea Ringworm Candidiasis and other Fungal Infections
-- Nail Fungus and other Nail Diseases
-- Seborrheic Keratoses
-- Warts Molluscum
+### Features
 
-## Getting Started
+    Image Classification: Classifies skin diseases from images using a fine-tuned ViT model.
+    Symptom Matching: Enhances predictions by matching user-input symptoms with predefined symptoms using semantic similarity.
+    Interactive Interface: Built with Streamlit for an easy and interactive user experience.
 
-### Prerequisites
-- Python 3.7 or higher
-- Required libraries:
-  - `streamlit`
-  - `transformers`
-  - `sentence-transformers`
-  - `torch`
-  - `opencv-python`
-  - `numpy`
-  - `Pillow`
+### Supported Skin Conditions
 
-Install the required dependencies using:
-```bash
-pip install -r requirements.txt
+    Acne/Rosacea
+    Actinic Keratosis Basal Cell Carcinoma
+    Psoriasis and Lichen Planus
+    Tinea Ringworm Candidiasis
+    Nail Fungus and other Nail Diseases
+    Seborrheic Keratoses
+    Warts Molluscum
 
-Setup
+### Model Weights
 
-    Clone this repository:
+Our fine-tuned ViT model achieves state-of-the-art performance on skin disease classification tasks on Hugging Face. The trained weights are available at https://drive.google.com/drive/folders/1b_IO8jqYP4oMPpBanhQvhEPdXMtLNUDE?usp=sharing. Please download the weights and place them in a directory named ViTModel in the root of the repository.
+## Installation
 
-    git clone https://github.com/HumayounMustafa/SkinDiseaseViT.git
-    cd SkinDiseaseViT
+### Clone the repository
 
-    Place the dat.json file containing disease information in the root directory.
-    Download the pretrained weights for ViT and place them in the appropriate folder.
+git clone https://github.com/HumayounMustafa/SkinDiseaseViT.git
+cd SkinDiseaseViT
 
-Run the Application
+### Create a virtual environment
 
-Start the Streamlit application:
+python3 -m venv venv
+source venv/bin/activate
 
-streamlit run app.py
+### Install the required packages
 
-Upload Image and Symptoms
+    pip install -r requirements.txt
 
-    Upload an image of the affected skin area.
-    Enter symptoms separated by commas (e.g., itching, redness, dry skin).
+### Requirements:
+        streamlit
+        transformers
+        sentence_transformers
+        torch
+        torchvision
+        numpy
+        opencv-python
+        Pillow
 
-The application will display:
+### Download the pre-trained models
+        ViT Model: Download from site.com and place the weights in a directory named ViTModel.
+        Sentence Transformer Model: The code uses all-MiniLM-L6-v2, which will be automatically downloaded.
 
-    Predicted disease name
-    Description
-    Symptoms
-    Causes
-    Treatment options
-    Match confidence score
+### Ensure dat.json is present
 
-Files in the Repository
+    The dat.json file contains detailed information about each skin disease, including descriptions, symptoms, causes, and treatments. Ensure that this file is present in the root directory.
 
-    app.py: Streamlit application code.
-    dat.json: JSON file containing disease information (descriptions, symptoms, causes, and treatments).
-    ViTInference.ipynb: Notebook for inference using Vision Transformer.
-    requirements.txt: List of dependencies.
+### Usage
 
-Pretrained Weights
+    Run the Streamlit app
 
-The application uses state-of-the-art pretrained weights for ViT. You can download them here.
-Acknowledgments
+    streamlit run app.py
 
-    Hugging Face Transformers: For providing pretrained models and tools.
-    Streamlit: For creating a simple and interactive web interface.
+    Interact with the app
+        Enter Symptoms: Input your symptoms separated by commas (e.g., itching, redness, dry skin).
+        Upload Image: Upload a clear image of the affected skin area.
+        Get Prediction: The app will display the predicted disease along with detailed information.
 
+### How It Works
+
+    Image Classification
+        The uploaded image is converted from BGR to RGB and then to a PIL image.
+        The image is preprocessed using ViTImageProcessor.
+        The ViT model predicts the skin disease based on the image.
+
+    Symptom Matching
+        User-input symptoms are encoded using a Sentence Transformer model.
+        Predefined symptoms for each disease are also encoded.
+        Cosine similarity is calculated between user symptoms and predefined symptoms.
+        The disease with the highest similarity score (above a threshold) is selected.
+
+    Final Prediction
+        Combines image classification and symptom similarity.
+        If the predicted disease matches the highest symptom similarity and the similarity score is above 0.7, detailed information is displayed.
+        If another disease has a higher similarity score, possible diseases are suggested.
+        If no sufficient match is found, the user is prompted to provide more symptoms.
+
+### Data
+
+The dat.json file contains information about each supported skin condition, including:
+
+    Description: A brief overview of the disease.
+    Symptoms: Common symptoms associated with the disease.
+    Causes: Possible causes or risk factors.
+    Treatment: Links to resources for treatment options.
+    Symptom List: A list of symptoms used for similarity matching.
+
+### Sample dat.json content:
+
+{
+  "Acne and Rosacea": {
+    "description": "Acne is a long-term skin disease...",
+    "symptoms": "Scars and Pigmentation",
+    "causes": "Risk factors include hormones, infections...",
+    "treatement-1": "https://www.medicinenet.com/acne/article.htm",
+    "symptom_list": "redness, pimples, pustules, swelling..."
+  },
+  ...
+}
+
+### Files in the Repository
+
+    app.py: The main Streamlit application.
+    dat.json: Contains disease information.
+    ViTInference.ipynb: Jupyter notebook for model inference demonstration.
+    requirements.txt: Python package requirements.
+
+### Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
+### Acknowledgments
 
-Feel free to contribute to this project by submitting issues or pull requests!
+    Hugging Face Transformers: For the ViT and Sentence Transformer models.
+    Streamlit: For providing an easy way to build web apps.
+    OpenCV: For image processing.
+
+Contact
+
+For questions or support, please contact [your email].
