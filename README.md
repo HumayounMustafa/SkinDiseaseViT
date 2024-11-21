@@ -63,7 +63,7 @@ source venv/bin/activate
         Pillow
 
 ### Download the pre-trained models
-        ViT Model: Download from site.com and place the weights in a directory named ViTModel.
+        ViT Model: Download from https://drive.google.com/drive/folders/1b_IO8jqYP4oMPpBanhQvhEPdXMtLNUDE?usp=sharing and place the weights in a directory named ViTModel.
         Sentence Transformer Model: The code uses all-MiniLM-L6-v2, which will be automatically downloaded.
 
 ### Ensure dat.json is present
