@@ -144,4 +144,4 @@ This project is licensed under the MIT License.
 
 Contact
 
-For questions or support, please contact [your email].
+For questions or support, please email humayounmustafa2000@gmail.com.
